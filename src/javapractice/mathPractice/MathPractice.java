@@ -56,9 +56,32 @@ public class MathPractice {
 	
 	}
 	
+	void practiceMath() {
+		int i = Math.abs(-10);
+		double d = Math.abs(-8.0);
+		System.out.println(i);
+		System.out.println(d);
+		
+		
+		double d2 = Math.ceil(2.5); //올림
+		double d3 = Math.floor(2.5); //내림
+		double d4 = Math.round(2.54); //소수 첫째자리에서 반올림
+		double d5 = Math.rint(2.77); //주어진 double값과 가장 가까준 정수를 double형으로 반환
+		System.out.println(d2);
+		System.out.println(d3);
+		System.out.println(d4);
+		System.out.println(d5);
+		
+		
+		double d6 = Math.max(1.1, 1.23);//주어진 두 값중 최대값 반환
+		double d7 = Math.min(-1.1, 1.23);//주어진 두 값중 최대값 반환
+		System.out.println(d6);
+		System.out.println(d7);
+	}
+	
 	public static void main(String[] args) {
 		MathPractice practice = new MathPractice();
-		practice.practiceRandom();
-		
+		//practice.practiceRandom();
+		practice.practiceMath();
 	}
 }
